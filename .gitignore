@@ -1,0 +1,25 @@
+# .NET build
+**/bin/
+**/obj/
+*.user
+*.suo
+
+# VS/VS Code
+.vs/
+.vscode/*!
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs / secrets / env
+*.log
+*.env
+secrets.json
+
+# Publish / artifacts
+artifacts/
+out/
+publish/

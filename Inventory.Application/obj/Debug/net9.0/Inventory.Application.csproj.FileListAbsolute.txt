@@ -1,0 +1,15 @@
+D:\InventoryManagement\Inventory.Application\bin\Debug\net9.0\Inventory.Application.deps.json
+D:\InventoryManagement\Inventory.Application\bin\Debug\net9.0\Inventory.Application.dll
+D:\InventoryManagement\Inventory.Application\bin\Debug\net9.0\Inventory.Application.pdb
+D:\InventoryManagement\Inventory.Application\bin\Debug\net9.0\Inventory.Domain.dll
+D:\InventoryManagement\Inventory.Application\bin\Debug\net9.0\Inventory.Domain.pdb
+D:\InventoryManagement\Inventory.Application\obj\Debug\net9.0\Inventory.Application.csproj.AssemblyReference.cache
+D:\InventoryManagement\Inventory.Application\obj\Debug\net9.0\Inventory.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\InventoryManagement\Inventory.Application\obj\Debug\net9.0\Inventory.Application.AssemblyInfoInputs.cache
+D:\InventoryManagement\Inventory.Application\obj\Debug\net9.0\Inventory.Application.AssemblyInfo.cs
+D:\InventoryManagement\Inventory.Application\obj\Debug\net9.0\Inventory.Application.csproj.CoreCompileInputs.cache
+D:\InventoryManagement\Inventory.Application\obj\Debug\net9.0\Inventor.1DAC6D85.Up2Date
+D:\InventoryManagement\Inventory.Application\obj\Debug\net9.0\Inventory.Application.dll
+D:\InventoryManagement\Inventory.Application\obj\Debug\net9.0\refint\Inventory.Application.dll
+D:\InventoryManagement\Inventory.Application\obj\Debug\net9.0\Inventory.Application.pdb
+D:\InventoryManagement\Inventory.Application\obj\Debug\net9.0\ref\Inventory.Application.dll

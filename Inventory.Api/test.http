@@ -1,0 +1,71 @@
+### 1) Create supplier
+POST http://localhost:5258/suppliers
+Content-Type: application/json
+
+{
+  "name": "Acme Corp",
+  "email": "supplier@acme.test",
+  "currency": "USD",
+  "country": "US"
+}
+
+### 2) Create category
+POST http://localhost:5258/categories
+Content-Type: application/json
+
+{
+  "name": "Electronics",
+  "shortcode": "ELEC"
+}
+
+### 3) List suppliers
+GET http://localhost:5258/suppliers
+
+### 4) List categories
+GET http://localhost:5258/categories
+
+### 5) Create product (replace IDs)
+POST http://localhost:5258/products
+Content-Type: application/json
+
+{
+  "supplierId": "REPLACE_SUPPLIER_ID",
+  "categoryId": "REPLACE_CATEGORY_ID",
+  "description": "Gaming Laptop",
+  "acquisitionCostSupplierCurrency": 1200.00,
+  "acquisitionCostUSD": 1200.00,
+  "acquireDate": "2025-08-12T03:00:00Z"
+}
+
+### 6) List products
+GET http://localhost:5258/products
+
+### 7) Get product by id
+GET http://localhost:5258/products/REPLACE_PRODUCT_ID
+
+### 8) Mark Sold
+POST http://localhost:5258/products/REPLACE_PRODUCT_ID/status
+Content-Type: application/json
+
+{
+  "newStatus": 1,
+  "timestamp": "2025-08-12T04:00:00Z"
+}
+
+### 9) Try invalid transition (Cancelled -> Sold should 400)
+POST http://localhost:5258/products/REPLACE_PRODUCT_ID/status
+Content-Type: application/json
+
+{
+  "newStatus": 2,
+  "timestamp": "2025-08-12T05:00:00Z"
+}
+
+### 10) Now attempt Sold again (should 400 if already Cancelled/Returned)
+POST http://localhost:5258/products/REPLACE_PRODUCT_ID/status
+Content-Type: application/json
+
+{
+  "newStatus": 1,
+  "timestamp": "2025-08-12T05:30:00Z"
+}
